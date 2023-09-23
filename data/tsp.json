@@ -1,0 +1,15 @@
+{
+    "nodes": {
+        "0": [{ "from": "0", "to": "1", "weights": [100] }],
+        "1": [{ "from": "1", "to": "2", "weights": [10] }],
+        "2": [{ "from": "2", "to": "1", "weights": [50] }]
+    },
+    "settings": {
+        "weights": { "is_symmetric": true },
+        "resolution": {
+        "kind": "shortest_cycle",
+        "from": "0",
+        "to": ["1", "2"]
+        }
+    }
+}
